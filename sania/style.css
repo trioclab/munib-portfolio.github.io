@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #282c33;
+    --color: #8a919c;
+    --family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --text-color: #c778dd;
+}
+body{
+    background-color: var(--bg-color);
+}
+.wrapper{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: 
+    'side nav'
+    'side main'
+    ;
+    gap: 10px;
+}
+
+.line1{
+    width: 2px;
+    height: 20vmax;
+    background-color: var(--color);
+}
+.side{
+    position: fixed;
+    left: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: side;
+
+}
+.logo{
+    color: var(--color);
+    text-decoration: none;
+    padding: 5px 0px;
+    font-size: 1.3rem;
+}
+.navbar{
+    grid-area: nav;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+#logo{
+    text-decoration: none;
+    color: #8a919c;
+    font-size: 2vmax;
+    font-family:var(--family);
+}
+.nav-links{
+    text-decoration: none;
+    padding: 0 10px;
+    color: #8a919c;
+    font-family: var(--family);
+    font-size: 1.5vmax;
+}
+strong{
+    color: var(--text-color);
+    padding-right: 4px;
+}
+.main-content{
+    
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    grid-area: main;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    font-family: var(--family);
+}
+.left-main{
+    width: 50%;
+}
+#heading1{
+    font-size: 3vmax;
+    color: white;
+    letter-spacing: 1px;
+}
+#para1{
+    padding: 10px;
+    color: var(--color);
+    letter-spacing: 3px;
+}
+#btn{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    font-family: var(--family);
+    border: 1px solid var(--text-color);
+    letter-spacing: 1px;
+}
+.image{
+    width: 80%;
+}
+#munib{
+    width: 100%;
+}
+.skills{
+    font-family: var(--family);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+#line2{
+    width: 30vmax;
+    height: 2px;
+    background-color: #8a919c;
+}
